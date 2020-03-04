@@ -10,6 +10,11 @@
     top: 0px;
     left: 0px;
     margin: 0px auto;
+    opacity: 0.85;
+}
+
+body {
+  background-color: #154215;
 }
 
 .title {
@@ -25,4 +30,6 @@
   border: 0px solid green;
   padding: 0px;
   display: block;
+  line-height: 200px;
+  height: 200px;
 }
