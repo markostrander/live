@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Exo+2:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Metal+Mania&display=swap);
+
 
 #background {
     position: fixed;
@@ -11,8 +13,16 @@
 }
 
 .title {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: 'Metal Mania', cursive;
+  /* font-weight: 700; */
+  font-size: 5em;
   color: white;
+  text-align: center;
   opacity: 0.75;
+  margin: auto;
+  width: 90%;
+  border: 0px solid green;
+  padding: 0px;
+  display: block;
 }
