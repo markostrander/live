@@ -1,0 +1,33 @@
+body {
+    /* Set the background image URL */
+    background-image: url('media/lark.jpg'); 
+    
+    /* Ensure the image covers the entire viewport */
+    background-size: cover; 
+    
+    /* Prevent the image from repeating if it's smaller than the screen */
+    background-repeat: no-repeat; 
+    
+    /* Center the image on the page */
+    background-position: center; 
+    
+    /* Fix the background image position so it stays put when scrolling */
+    background-attachment: fixed; 
+    
+    /* Optional: set a fallback background color in case the image doesn't load */
+    background-color: #cccccc; 
+}
+
+/* Optional: Style the content container for readability over the image */
+.content {
+    /* Add padding and a semi-transparent background for better text readability */
+    padding: 20px;
+    margin: 50px;
+    background-color: rgba(255, 255, 255, 0.7); /* White with 70% opacity */
+    border-radius: 5px;
+    text-align: center;
+}
+
+h1, p {
+    color: #333; /* Darker text color for contrast */
+}
