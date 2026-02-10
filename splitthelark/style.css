@@ -16,6 +16,11 @@ body {
     
     /* Optional: set a fallback background color in case the image doesn't load */
     background-color: #cccccc; 
+
+    /* Set font to Palatino */
+
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+
 }
 
 /* Optional: Style the content container for readability over the image */
