@@ -15,7 +15,7 @@ body {
     background-attachment: fixed; 
     
     /* Optional: set a fallback background color in case the image doesn't load */
-    background-color: #cccccc; 
+    background-color: #000000; 
 
     /* Set font to Palatino */
 
