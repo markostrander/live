@@ -18,8 +18,11 @@ body {
     background-color: #000000; 
 
     /* Set font to Palatino */
-
     font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+
+    /* Set font to Palatino */
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+
 
 }
 
