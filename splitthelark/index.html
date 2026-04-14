@@ -1,54 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="../media/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Split the Lark</title>
-    <style>
-        body {
-            background-image: url('media/lark.jpg');
-            background-size: cover; /* Or 'contain', '100% 100%', etc. */
-            background-repeat: no-repeat;
-            background-attachment: fixed; /* Optional: keeps image fixed while scrolling */
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split the Lark</title>
+
+  <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background-color: #0e0e0e;
+      color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 700px;
+      width: 100%;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .credit {
+      margin-top: 20px;
+      margin-bottom: 40px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+      border: 1px solid #666;
+      padding: 10px;
+    }
+
+    form {
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      font-size: 0.9rem;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      background: #111;
+      border: 1px solid #555;
+      color: #fff;
+      font-family: inherit;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 15px;
+      background: #222;
+      border: 1px solid #888;
+      color: #fff;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    button:hover {
+      background: #444;
+    }
+
+    .tagline {
+      margin-top: 10px;
+      font-style: italic;
+      opacity: 0.6;
+    }
+  </style>
 </head>
 
-<body topmargin="50" leftmargin="50" rightmargin="0">
+<body>
 
-<img src="media/Logo.png" style="Width:25%"><br>
+<div class="container">
 
-<table width="40%" border="0" padding="4">
+  <!-- Banner / Logo -->
+  <img src="media/ribbon.png" alt="Split the Lark">
 
-<tr><td>
+  <div class="tagline">
+    a setting of Dickinson
+  </div>
 
-<P>Get in touch using the form below.<P>
-<form action="https://api.web3forms.com/submit" method="POST">
-  <input type="hidden" name="access_key" value="3abbc732-c74e-4514-b713-f8e2736713fd">
-  <label for="name">Name:</label>
-    <input id="Name:" type="text" name="name" required><br>
-  <label for="email">E-mail:</label>
-  <input id="Email:" type="email" name="email" required><br><P>
-  <label for="message">Message:</label><br>
-  <textarea id="Message:"name="message" required rows="10" cols="50"></textarea><br>
-  <button type="submit">Submit Form</button>
-</form>
-</td></tr>
+  <!-- Credit -->
+  <div class="credit">
+    Words by Emily Dickinson (1830–1866). Music by Split the Lark.
+  </div>
 
-</table>
+  <!-- Contact -->
+  <p>Get in touch:</p>
 
+  <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="3abbc732-c74e-4514-b713-f8e2736713fd">
 
-    
+    <label for="name">Name</label>
+    <input id="name" type="text" name="name" required>
+
+    <label for="email">Email</label>
+    <input id="email" type="email" name="email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="6" required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+
+</div>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
