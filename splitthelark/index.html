@@ -30,6 +30,15 @@ body {
   filter: contrast(1.05) brightness(1.02);
 }
 
+.left::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.1);
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}  
+
 /* CENTER BAND */
 .center {
   flex: 1;
