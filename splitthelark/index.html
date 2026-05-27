@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Split the Lark</title>
 
   <link rel="icon" href="media/favicon.ico" />
@@ -10,48 +11,99 @@
 </head>
 
 <body>
-  <main class="page">
-    <section class="art-panel" aria-label="Split the Lark artwork">
-      <div class="artwork"></div>
 
-      <div class="center-band">
-        <div class="credit-ribbon">
-          words by EMILY DICKINSON (1830–1886)
+<main class="page">
+
+  <!-- LEFT ART PANEL -->
+  <section class="art-panel">
+
+    <div class="artwork"></div>
+
+    <div class="center-band">
+
+      <div class="credit-ribbon">
+        words by EMILY DICKINSON (1830–1886)
+      </div>
+
+      <div class="logo-wrap">
+
+        <div class="logo-text">
+          <span class="split">Split</span>
+          <span class="the">the</span>
+          <span class="lark">Lark</span>
         </div>
 
-        <div class="logo-wrap">
-          <img class="logo" src="media/ribbon.png" alt="Split the Lark" />
-          <div class="location">Massachusetts</div>
+        <div class="location">
+          Massachusetts
         </div>
+
       </div>
-    </section>
 
-    <section class="contact-panel">
-      <div class="contact">
-        <div class="ornament">— ❧ —</div>
+    </div>
 
-        <h1>Stay in Touch</h1>
+  </section>
 
-        <p class="intro">
-          "A Letter always feels to me like immortality…"— Emily Dickinson.
-        </p>
+  <!-- RIGHT CONTACT PANEL -->
+  <section class="contact-panel">
 
-        <form action="https://api.web3forms.com/submit" method="POST">
-          <input type="hidden" name="access_key" value="3abbc732-c74e-4514-b713-f8e2736713fd">
+    <div class="contact">
 
-          <label for="name">Name</label>
-          <input id="name" type="text" name="name" required>
-
-          <label for="email">Email</label>
-          <input id="email" type="email" name="email" required>
-
-          <label for="message">Message</label>
-          <textarea id="message" name="message" required></textarea>
-
-          <button type="submit">Send Message</button>
-        </form>
+      <div class="ornament">
+        ❧
       </div>
-    </section>
-  </main>
+
+      <h1>Stay in Touch</h1>
+
+      <p class="intro">
+        “A Letter always feels to me like immortality…”<br>
+        — Emily Dickinson
+      </p>
+
+      <form action="https://api.web3forms.com/submit" method="POST">
+
+        <input
+          type="hidden"
+          name="access_key"
+          value="3abbc732-c74e-4514-b713-f8e2736713fd"
+        >
+
+        <label for="name">Name</label>
+
+        <input
+          id="name"
+          type="text"
+          name="name"
+          required
+        >
+
+        <label for="email">Email</label>
+
+        <input
+          id="email"
+          type="email"
+          name="email"
+          required
+        >
+
+        <label for="message">Message</label>
+
+        <textarea
+          id="message"
+          name="message"
+          required
+        ></textarea>
+
+        <button type="submit">
+          Send Message
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+</main>
+
 </body>
 </html>
