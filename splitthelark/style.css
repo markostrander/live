@@ -1,41 +1,219 @@
+:root {
+  --gold: #b8a24a;
+  --soft-gold: #d8ca7a;
+  --black: #020202;
+  --field: #171211;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-    /* Set the background image URL */
-    background-image: url('media/lark.jpg'); 
-    
-    /* Ensure the image covers the entire viewport */
-    background-size: cover; 
-    
-    /* Prevent the image from repeating if it's smaller than the screen */
-    background-repeat: no-repeat; 
-    
-    /* Center the image on the page */
-    background-position: center; 
-    
-    /* Fix the background image position so it stays put when scrolling */
-    background-attachment: fixed; 
-    
-    /* Optional: set a fallback background color in case the image doesn't load */
-    background-color: #000000; 
-
-    /* Set font to Palatino */
-    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-
-    /* Set font to Palatino */
-    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
-
-
+  margin: 0;
+  min-height: 100vh;
+  background: var(--black);
+  color: #f2e9c9;
+  font-family: Georgia, "Times New Roman", serif;
 }
 
-/* Optional: Style the content container for readability over the image */
-.content {
-    /* Add padding and a semi-transparent background for better text readability */
-    padding: 20px;
-    margin: 50px;
-    background-color: rgba(255, 255, 255, 0.7); /* White with 70% opacity */
-    border-radius: 5px;
-    text-align: center;
+.page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 2.4fr 1fr;
 }
 
-h1, p {
-    color: #333; /* Darker text color for contrast */
+.art-panel {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background: black;
+}
+
+.artwork {
+  position: absolute;
+  inset: 0;
+  background-image: url("media/banner.png");
+  background-size: cover;
+  background-position: 35% center;
+  background-repeat: no-repeat;
+  filter: contrast(1.03) saturate(0.92) brightness(0.98);
+  opacity: 0.92;
+}
+
+.center-band {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  min-height: 190px;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.96);
+  backdrop-filter: blur(2px);
+  border-top: 1px solid var(--gold);
+  border-bottom: 1px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.credit-ribbon {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #8b7a2e;
+  color: #efe7a5;
+  padding: 14px 48px 14px 34px;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  clip-path: polygon(0 0, 92% 0, 100% 50%, 92% 100%, 0 100%);
+  z-index: 2;
+}
+
+.logo-wrap {
+  text-align: center;
+  z-index: 1;
+}
+
+.logo {
+  width: min(680px, 70vw);
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0 10px rgba(200, 180, 90, 0.2));
+}
+
+.location {
+  margin-top: -8px;
+  color: var(--soft-gold);
+  font-size: 1.35rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+.contact-panel {
+  min-height: 100vh;
+  background: radial-gradient(circle at center, #090807 0%, #000 70%);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 220px 7vw 60px;
+}
+
+.contact {
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+.ornament {
+  color: var(--gold);
+  opacity: 0.75;
+  margin-bottom: 18px;
+  letter-spacing: 0.25em;
+}
+
+h1 {
+  color: var(--soft-gold);
+  font-size: 1.1rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin: 0 0 22px;
+  font-weight: normal;
+}
+
+.intro {
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 42px;
+  color: #eee2c4;
+}
+
+form {
+  text-align: left;
+}
+
+label {
+  display: block;
+  color: var(--soft-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.8rem;
+  margin: 22px 0 8px;
+}
+
+input,
+textarea {
+  width: 100%;
+  background: rgba(35, 25, 22, 0.55);
+  border: 1px solid rgba(216, 202, 122, 0.35);
+  color: #fff8dc;
+  padding: 13px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+button {
+  display: block;
+  margin: 36px auto 0;
+  padding: 14px 34px;
+  background: transparent;
+  border: 1px solid var(--gold);
+  color: var(--soft-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-family: Georgia, "Times New Roman", serif;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgba(184, 162, 74, 0.12);
+}
+
+@media (max-width: 900px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+
+  .art-panel {
+    min-height: 70vh;
+  }
+
+  .artwork {
+    background-position: 35% center;
+  }
+
+  .center-band {
+    min-height: 170px;
+  }
+
+  .credit-ribbon {
+    top: auto;
+    bottom: 18px;
+    transform: none;
+    font-size: 0.8rem;
+    padding-left: 20px;
+  }
+
+  .logo {
+    width: 75vw;
+  }
+
+  .contact-panel {
+    min-height: auto;
+    padding: 50px 24px;
+  }
 }
