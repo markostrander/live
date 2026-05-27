@@ -33,7 +33,7 @@ body {
 .artwork {
   position: absolute;
   inset: 0;
-  background-image: url("media/banner.png");
+  background-image: url("media/LarkOnly.png");
   background-size: cover;
   background-position: 35% center;
   background-repeat: no-repeat;
