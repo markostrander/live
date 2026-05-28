@@ -35,7 +35,7 @@ body {
   inset: 0;
   background-image: url("media/LarkOnlyFull.png");
   background-size: cover;
-  background-position: 35% center;
+  background-position: 35% 30%;
   background-repeat: no-repeat;
   filter: contrast(1.03) saturate(0.92) brightness(0.98);
   opacity: 0.92;
