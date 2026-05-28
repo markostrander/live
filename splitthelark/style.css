@@ -41,6 +41,14 @@ body {
   opacity: 0.92;
 }
 
+.logo-image {
+  width: min(560px, 55vw);
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 .center-band {
   position: absolute;
   top: 50%;
