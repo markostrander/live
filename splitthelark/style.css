@@ -224,4 +224,39 @@ button:hover {
     min-height: auto;
     padding: 50px 24px;
   }
+
+  .thank-you-page {
+  background: #020202;
+  color: #d8ca7a;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.thank-you {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.thank-you h1 {
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.thank-you p {
+  color: #f2e9c9;
+  font-style: italic;
+}
+
+.thank-you a {
+  margin-top: 24px;
+  color: #d8ca7a;
+  text-decoration: none;
+  border: 1px solid #b8a24a;
+  padding: 12px 20px;
+ }
 }
