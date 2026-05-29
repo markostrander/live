@@ -55,16 +55,15 @@ body {
   border-top: 1px solid var(--gold);
   border-bottom: 1px solid var(--gold);
 
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr minmax(360px, 520px) 1fr;
   align-items: center;
-  justify-content: center;
-  gap: 30px;
-  padding: 20px 40px;
+  padding: 20px 0;
 }
 
 .credit-ribbon,
 .music-ribbon {
-  flex: 0 0 340px;
+  width: 100%;
   background: #8b7a2e;
   color: #efe7a5;
   padding: 14px 24px;
@@ -77,27 +76,27 @@ body {
 .credit-ribbon {
   clip-path: polygon(
     0 0,
-    92% 0,
+    96% 0,
     100% 50%,
-    92% 100%,
+    96% 100%,
     0 100%
   );
 }
 
 .music-ribbon {
   clip-path: polygon(
-    8% 0,
+    4% 0,
     100% 0,
     100% 100%,
-    8% 100%,
+    4% 100%,
     0 50%
   );
 }
 
 .logo-wrap {
   text-align: center;
-  z-index: 1;
-  flex: 0 0 auto;
+  z-index: 3;
+  padding: 0 20px;
 }
 
 .logo-image {
@@ -264,46 +263,30 @@ button:hover {
   }
 
   .center-band {
-    position: absolute;
-    min-height: 300px;
-    flex-direction: column;
-    gap: 14px;
-    padding: 32px 20px;
-  }
-
-  .logo-wrap {
-    order: 1;
-  }
-
-  .logo-image {
-    width: min(82vw, 500px);
-  }
-
-  .location {
-    font-size: 1rem;
-    letter-spacing: 0.22em;
-    margin-top: 6px;
+    min-height: 170px;
+    grid-template-columns: 1fr minmax(180px, 55vw) 1fr;
+    padding: 16px 0;
   }
 
   .credit-ribbon,
   .music-ribbon {
-    position: static;
-    transform: none;
-    clip-path: none;
-    width: 90%;
-    max-width: 430px;
-    flex: none;
-    text-align: center;
-    padding: 12px 18px;
-    font-size: 0.82rem;
+    font-size: 0.62rem;
+    padding: 10px 8px;
+    line-height: 1.2;
   }
 
-  .credit-ribbon {
-    order: 2;
+  .logo-wrap {
+    padding: 0 8px;
   }
 
-  .music-ribbon {
-    order: 3;
+  .logo-image {
+    width: 52vw;
+  }
+
+  .location {
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    margin-top: 4px;
   }
 
   .contact-panel {
