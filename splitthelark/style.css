@@ -1,3 +1,241 @@
+:root {
+  --gold: #b8a24a;
+  --soft-gold: #d8ca7a;
+  --black: #020202;
+  --field: #171211;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--black);
+  color: #f2e9c9;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 2.4fr 1fr;
+}
+
+.art-panel {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background: black;
+}
+
+.artwork {
+  position: absolute;
+  inset: 0;
+  background-image: url("media/LarkOnlyFull.png");
+  background-size: cover;
+  background-position: 35% 35%;
+  background-repeat: no-repeat;
+  filter: contrast(1.03) saturate(0.92) brightness(0.98);
+  opacity: 0.92;
+}
+
+/* CENTER TITLE BAND */
+
+.center-band {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  min-height: 190px;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.96);
+  backdrop-filter: blur(2px);
+  border-top: 1px solid var(--gold);
+  border-bottom: 1px solid var(--gold);
+  display: grid;
+  grid-template-columns: 1fr minmax(360px, 520px) 1fr;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.credit-ribbon,
+.music-ribbon {
+  width: 100%;
+  background: #8b7a2e;
+  color: #efe7a5;
+  padding: 14px 24px;
+  text-align: center;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  z-index: 2;
+}
+
+.credit-ribbon {
+  clip-path: polygon(0 0, 96% 0, 100% 50%, 96% 100%, 0 100%);
+}
+
+.music-ribbon {
+  clip-path: polygon(4% 0, 100% 0, 100% 100%, 4% 100%, 0 50%);
+}
+
+.logo-wrap {
+  text-align: center;
+  z-index: 3;
+  padding: 0 20px;
+}
+
+.logo-image {
+  width: min(500px, 34vw);
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 0 10px rgba(200, 180, 90, 0.2));
+}
+
+.location {
+  margin-top: 8px;
+  color: var(--soft-gold);
+  font-size: 1.35rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+/* CONTACT PANEL */
+
+.contact-panel {
+  min-height: 100vh;
+  background: radial-gradient(circle at center, #090807 0%, #000 70%);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 220px 7vw 60px;
+}
+
+.contact {
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+.ornament {
+  color: var(--gold);
+  opacity: 0.75;
+  margin-bottom: 18px;
+  letter-spacing: 0.25em;
+}
+
+h1 {
+  color: var(--soft-gold);
+  font-size: 1.1rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin: 0 0 22px;
+  font-weight: normal;
+}
+
+.intro {
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 42px;
+  color: #eee2c4;
+}
+
+form {
+  text-align: left;
+}
+
+label {
+  display: block;
+  color: var(--soft-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.8rem;
+  margin: 22px 0 8px;
+}
+
+input,
+textarea {
+  width: 100%;
+  background: rgba(35, 25, 22, 0.55);
+  border: 1px solid rgba(216, 202, 122, 0.35);
+  color: #fff8dc;
+  padding: 13px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+button {
+  display: block;
+  margin: 36px auto 0;
+  padding: 14px 34px;
+  background: transparent;
+  border: 1px solid var(--gold);
+  color: var(--soft-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-family: Georgia, "Times New Roman", serif;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgba(184, 162, 74, 0.12);
+}
+
+/* THANK YOU PAGE */
+
+.thank-you-page {
+  background: #020202;
+  color: #d8ca7a;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.thank-you {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.thank-you h1 {
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.thank-you p {
+  color: #f2e9c9;
+  font-style: italic;
+}
+
+.thank-you a {
+  margin-top: 24px;
+  color: #d8ca7a;
+  text-decoration: none;
+  border: 1px solid #b8a24a;
+  padding: 12px 20px;
+}
+
+/* MOBILE */
+
 @media (max-width: 900px) {
   .page {
     grid-template-columns: 1fr;
@@ -15,11 +253,13 @@
   .center-band {
     top: 38%;
     min-height: 210px;
+    grid-template-columns: 1fr minmax(180px, 52vw) 1fr;
     padding: 24px 16px;
   }
 
   .logo-wrap {
     max-width: 70%;
+    padding: 0 8px;
   }
 
   .logo-image {
@@ -33,26 +273,21 @@
     margin-top: 4px;
   }
 
-  .credit-ribbon {
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    max-width: 26%;
-    padding: 12px 18px 12px 12px;
+  .credit-ribbon,
+  .music-ribbon {
     font-size: 0.75rem;
     line-height: 1.25;
     text-align: center;
   }
 
+  .credit-ribbon {
+    max-width: 100%;
+    padding: 12px 18px 12px 12px;
+  }
+
   .music-ribbon {
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    max-width: 26%;
+    max-width: 100%;
     padding: 12px 12px 12px 18px;
-    font-size: 0.75rem;
-    line-height: 1.25;
-    text-align: center;
   }
 
   .contact-panel {
