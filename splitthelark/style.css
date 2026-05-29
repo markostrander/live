@@ -79,6 +79,27 @@ body {
   z-index: 2;
 }
 
+.music-ribbon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #8b7a2e;
+  color: #efe7a5;
+  padding: 14px 34px 14px 48px;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  z-index: 2;
+
+  clip-path: polygon(
+    8% 0,
+    100% 0,
+    100% 100%,
+    8% 100%,
+    0 50%
+  );
+}
+
 .logo-wrap {
   text-align: center;
   z-index: 1;
