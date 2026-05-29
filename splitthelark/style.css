@@ -41,13 +41,7 @@ body {
   opacity: 0.92;
 }
 
-.logo-image {
-  width: min(560px, 55vw);
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
+/* CENTER TITLE BAND */
 
 .center-band {
   position: absolute;
@@ -60,37 +54,37 @@ body {
   backdrop-filter: blur(2px);
   border-top: 1px solid var(--gold);
   border-bottom: 1px solid var(--gold);
+
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 30px;
+  padding: 20px 40px;
+}
+
+.credit-ribbon,
+.music-ribbon {
+  flex: 0 0 340px;
+  background: #8b7a2e;
+  color: #efe7a5;
+  padding: 14px 24px;
+  text-align: center;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  z-index: 2;
 }
 
 .credit-ribbon {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #8b7a2e;
-  color: #efe7a5;
-  padding: 14px 48px 14px 34px;
-  font-size: 0.95rem;
-  letter-spacing: 0.02em;
-  clip-path: polygon(0 0, 92% 0, 100% 50%, 92% 100%, 0 100%);
-  z-index: 2;
+  clip-path: polygon(
+    0 0,
+    92% 0,
+    100% 50%,
+    92% 100%,
+    0 100%
+  );
 }
 
 .music-ribbon {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #8b7a2e;
-  color: #efe7a5;
-  padding: 14px 34px 14px 48px;
-  font-size: 0.95rem;
-  letter-spacing: 0.02em;
-  z-index: 2;
-
   clip-path: polygon(
     8% 0,
     100% 0,
@@ -103,22 +97,27 @@ body {
 .logo-wrap {
   text-align: center;
   z-index: 1;
+  flex: 0 0 auto;
 }
 
-.logo {
-  width: min(680px, 70vw);
+.logo-image {
+  width: min(500px, 34vw);
   max-width: 100%;
   height: auto;
+  display: block;
+  margin: 0 auto;
   filter: drop-shadow(0 0 10px rgba(200, 180, 90, 0.2));
 }
 
 .location {
-  margin-top: -8px;
+  margin-top: 8px;
   color: var(--soft-gold);
   font-size: 1.35rem;
   letter-spacing: 0.28em;
   text-transform: uppercase;
 }
+
+/* CONTACT PANEL */
 
 .contact-panel {
   min-height: 100vh;
@@ -212,41 +211,9 @@ button:hover {
   background: rgba(184, 162, 74, 0.12);
 }
 
-@media (max-width: 900px) {
-  .page {
-    grid-template-columns: 1fr;
-  }
+/* THANK YOU PAGE */
 
-  .art-panel {
-    min-height: 70vh;
-  }
-
-  .artwork {
-    background-position: 35% center;
-  }
-
-  .center-band {
-    min-height: 170px;
-  }
-
-  .credit-ribbon {
-    top: auto;
-    bottom: 18px;
-    transform: none;
-    font-size: 0.8rem;
-    padding-left: 20px;
-  }
-
-  .logo {
-    width: 75vw;
-  }
-
-  .contact-panel {
-    min-height: auto;
-    padding: 50px 24px;
-  }
-
-  .thank-you-page {
+.thank-you-page {
   background: #020202;
   color: #d8ca7a;
   font-family: Georgia, "Times New Roman", serif;
@@ -279,5 +246,68 @@ button:hover {
   text-decoration: none;
   border: 1px solid #b8a24a;
   padding: 12px 20px;
- }
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+
+  .art-panel {
+    min-height: 85vh;
+  }
+
+  .artwork {
+    background-position: 35% center;
+  }
+
+  .center-band {
+    position: absolute;
+    min-height: 300px;
+    flex-direction: column;
+    gap: 14px;
+    padding: 32px 20px;
+  }
+
+  .logo-wrap {
+    order: 1;
+  }
+
+  .logo-image {
+    width: min(82vw, 500px);
+  }
+
+  .location {
+    font-size: 1rem;
+    letter-spacing: 0.22em;
+    margin-top: 6px;
+  }
+
+  .credit-ribbon,
+  .music-ribbon {
+    position: static;
+    transform: none;
+    clip-path: none;
+    width: 90%;
+    max-width: 430px;
+    flex: none;
+    text-align: center;
+    padding: 12px 18px;
+    font-size: 0.82rem;
+  }
+
+  .credit-ribbon {
+    order: 2;
+  }
+
+  .music-ribbon {
+    order: 3;
+  }
+
+  .contact-panel {
+    min-height: auto;
+    padding: 50px 24px;
+  }
 }
