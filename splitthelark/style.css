@@ -111,7 +111,7 @@ body {
   background: radial-gradient(
     circle at center,
     #26211c 0%,
-    #181512 65%,
+    #FFFFFF 65%,
     #100e0c 100%
   );
   display: flex;
