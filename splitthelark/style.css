@@ -108,17 +108,11 @@ body {
 
 .contact-panel {
   min-height: 100vh;
-  background: radial-gradient(
-    circle at center,
-    #26211c 0%,
-    #FFFFFF 65%,
-    #100e0c 100%
-  );
+  background: red !important;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   padding: 220px 7vw 60px;
-  border-left: 1px solid rgba(184, 162, 74, 0.25);
 }
 
 .contact {
