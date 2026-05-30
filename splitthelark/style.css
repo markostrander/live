@@ -108,11 +108,17 @@ body {
 
 .contact-panel {
   min-height: 100vh;
-  background: radial-gradient(circle at center, #090807 0%, #000 70%);
+  background: radial-gradient(
+    circle at center,
+    #26211c 0%,
+    #181512 65%,
+    #100e0c 100%
+  );
   display: flex;
   align-items: flex-start;
   justify-content: center;
   padding: 220px 7vw 60px;
+  border-left: 1px solid rgba(184, 162, 74, 0.25);
 }
 
 .contact {
@@ -296,16 +302,6 @@ button:hover {
     max-width: 100%;
     padding: 12px 12px 12px 18px;
   }
-
-.contact-panel {
-  min-height: 100vh;
-  background: #181512;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 220px 7vw 60px;
-  border-left: 1px solid rgba(184, 162, 74, 0.25);
-}
 
   display: flex;
   align-items: flex-start;
