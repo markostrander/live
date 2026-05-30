@@ -108,11 +108,12 @@ body {
 
 .contact-panel {
   min-height: 100vh;
-  background: #FFFFFF;
+  background: #1c1713;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   padding: 220px 7vw 60px;
+  border-left: 1px solid rgba(184, 162, 74, 0.25);
 }
 
 .contact {
