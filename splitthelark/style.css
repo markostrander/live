@@ -292,23 +292,22 @@ button:hover {
     padding: 12px 18px 12px 12px;
   }
 
+  .music-ribbon {
+    max-width: 100%;
+    padding: 12px 12px 12px 18px;
+  }
+
   .dates {
     font-size: 0.72em;
     opacity: 0.85;
     letter-spacing: 0.05em;
   }
 
-  .music-ribbon {
-    max-width: 100%;
-    padding: 12px 12px 12px 18px;
+  .contact-panel {
+    min-height: auto;
+    padding: 32px 24px 60px;
   }
 
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 220px 7vw 60px;
-}
-  
   .contact {
     max-width: 100%;
   }
