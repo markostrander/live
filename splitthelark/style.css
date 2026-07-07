@@ -305,56 +305,62 @@ button:hover {
   }
 }
 
-/* Mobile layout */
 @media (max-width: 900px) {
   .page {
     grid-template-columns: 1fr;
   }
 
   .art-panel {
-    min-height: 500px;
+    min-height: 540px;
   }
 
-.artwork {
-  background-position: 50% -50%;
-}
+  .artwork {
+    background-position: 50% 42%;
+    background-size: cover;
+  }
 
   .center-band {
-    top: 34%;
-    min-height: 170px;
-    grid-template-columns: 1fr minmax(160px, 50vw) 1fr;
-    padding: 18px 12px;
+    top: 38%;
+    min-height: 150px;
+    grid-template-columns: 1fr minmax(190px, 54vw) 1fr;
+    padding: 12px 10px;
   }
 
   .logo-wrap {
-    max-width: 70%;
+    max-width: 72%;
     padding: 0 6px;
   }
 
   .logo-image {
-    width: min(62vw, 360px);
+    width: min(58vw, 340px);
+    height: auto;
   }
 
   .location {
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     letter-spacing: 0.18em;
-    margin-top: 3px;
+    margin-top: 2px;
   }
 
   .credit-ribbon,
   .music-ribbon {
     font-size: 0.62rem;
-    line-height: 1.2;
+    line-height: 1.15;
     padding: 10px 8px;
   }
 
   .dates {
-    font-size: 0.72em;
+    font-size: 0.68em;
+    opacity: 0.85;
   }
 
   .contact-panel {
     min-height: auto;
-    padding: 28px 24px 56px;
+    padding: 12px 24px 56px;
     border-left: none;
+  }
+
+  .contact {
+    max-width: 100%;
   }
 }
