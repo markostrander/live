@@ -306,3 +306,58 @@ button:hover {
     max-width: 100%;
   }
 }
+
+/* Mobile layout */
+@media (max-width: 900px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+
+  .art-panel {
+    min-height: 500px;
+  }
+
+  .artwork {
+    background-position: 50% 10%;
+    background-size: cover;
+  }
+
+  .center-band {
+    top: 34%;
+    min-height: 170px;
+    grid-template-columns: 1fr minmax(160px, 50vw) 1fr;
+    padding: 18px 12px;
+  }
+
+  .logo-wrap {
+    max-width: 70%;
+    padding: 0 6px;
+  }
+
+  .logo-image {
+    width: min(62vw, 360px);
+  }
+
+  .location {
+    font-size: 0.8rem;
+    letter-spacing: 0.18em;
+    margin-top: 3px;
+  }
+
+  .credit-ribbon,
+  .music-ribbon {
+    font-size: 0.62rem;
+    line-height: 1.2;
+    padding: 10px 8px;
+  }
+
+  .dates {
+    font-size: 0.72em;
+  }
+
+  .contact-panel {
+    min-height: auto;
+    padding: 28px 24px 56px;
+    border-left: none;
+  }
+}
