@@ -311,9 +311,8 @@ button:hover {
   }
 
   .art-panel {
-    min-height: 540px;
-  }
-
+    min-height: 420px;
+}
   .artwork {
     background-position: 50% 100%;
     background-size: cover;
