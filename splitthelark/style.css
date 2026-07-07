@@ -311,7 +311,7 @@ button:hover {
   }
 
   .art-panel {
-    min-height: 420px;
+    min-height: 540px;
 }
   .artwork {
     background-position: 50% 100%;
@@ -353,11 +353,14 @@ button:hover {
     opacity: 0.85;
   }
 
-  .contact-panel {
-    min-height: auto;
-    padding: 12px 24px 56px;
-    border-left: none;
-  }
+.contact-panel {
+  min-height: auto;
+  margin-top: -80px;      /* pull panel upward */
+  padding: 90px 24px 56px; /* restore space inside the panel */
+  border-left: none;
+  position: relative;
+  z-index: 5;
+}
 
   .contact {
     max-width: 100%;
