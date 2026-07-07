@@ -243,20 +243,18 @@ button:hover {
     grid-template-columns: 1fr;
   }
 
-  .art-panel {
-    min-height: 560px;
-  }
+.art-panel {
+  min-height: 500px;
+}
 
-  .artwork {
-    background-position: 50% 200%;
-    background-size: cover;
-  }
-  .center-band {
-    top: 34%;
-    min-height: 210px;
-    grid-template-columns: 1fr minmax(180px, 52vw) 1fr;
-    padding: 24px 16px;
-  }
+.artwork {
+  background-position: 50% -20%;
+  background-size: cover;
+}
+
+.center-band {
+  top: 38%;
+}
 
   .logo-wrap {
     max-width: 70%;
@@ -297,10 +295,10 @@ button:hover {
     letter-spacing: 0.05em;
   }
 
-  .contact-panel {
-    min-height: auto;
-    padding: 32px 24px 60px;
-  }
+.contact-panel {
+  min-height: auto;
+  padding: 12px 24px 56px;
+}
 
   .contact {
     max-width: 100%;
@@ -317,10 +315,9 @@ button:hover {
     min-height: 500px;
   }
 
-  .artwork {
-    background-position: 50% 10%;
-    background-size: cover;
-  }
+.artwork {
+  background-position: 50% -35%;
+}
 
   .center-band {
     top: 34%;
