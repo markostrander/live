@@ -253,18 +253,20 @@ button:hover {
 }
 
 .center-band {
-  top: 38%;
+  top: 40%;
+  min-height: 135px;
+  grid-template-columns: 0.8fr minmax(170px, 48vw) 0.8fr;
+  padding: 10px 8px;
 }
 
-  .logo-wrap {
-    max-width: 70%;
-    padding: 0 8px;
-  }
+.logo-image {
+  width: min(54vw, 300px);
+}
 
-  .logo-image {
-    width: min(72vw, 420px);
-    height: auto;
-  }
+.logo-wrap {
+  max-width: none;
+  padding: 0 10px;
+}
 
   .location {
     font-size: 1rem;
@@ -279,15 +281,13 @@ button:hover {
     text-align: center;
   }
 
-  .credit-ribbon {
-    max-width: 100%;
-    padding: 12px 18px 12px 12px;
-  }
-
-  .music-ribbon {
-    max-width: 100%;
-    padding: 12px 12px 12px 18px;
-  }
+.credit-ribbon,
+.music-ribbon {
+  font-size: 0.60rem;
+  line-height: 1.35;
+  padding: 14px 6px;
+  font-family: "Cormorant Garamond", serif;
+}
 
   .dates {
     font-size: 0.72em;
