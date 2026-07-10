@@ -246,124 +246,58 @@ button:hover {
     grid-template-columns: 1fr;
   }
 
-.art-panel {
-  min-height: 500px;
-}
-
-.artwork {
-  background-position: 50% -20%;
-  background-size: cover;
-}
-
-.center-band {
-  top: 40%;
-  min-height: 135px;
-  grid-template-columns: 0.8fr minmax(170px, 48vw) 0.8fr;
-  padding: 10px 8px;
-}
-
-.logo-image {
-  width: min(54vw, 300px);
-}
-
-.logo-wrap {
-  max-width: none;
-  padding: 0 10px;
-}
-
-  .location {
-    font-size: 1rem;
-    letter-spacing: 0.22em;
-    margin-top: 4px;
-  }
-
-  .credit-ribbon,
-  .music-ribbon {
-    font-size: 0.75rem;
-    line-height: 1.25;
-    text-align: center;
-  }
-
-.credit-ribbon,
-.music-ribbon {
-  font-size: 0.60rem;
-  line-height: 1.35;
-  padding: 14px 6px;
-  font-family: "Cormorant Garamond", serif;
-}
-
-  .dates {
-    font-size: 0.72em;
-    opacity: 0.85;
-    letter-spacing: 0.05em;
-  }
-
-.contact-panel {
-  min-height: auto;
-  padding: 12px 24px 56px;
-}
-
-  .contact {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 900px) {
-  .page {
-    grid-template-columns: 1fr;
-  }
-
   .art-panel {
-    min-height: 540px;
-}
+    min-height: 620px;
+  }
+
   .artwork {
-    background-position: 50% 100%;
+    background-position: 50% 28%;
     background-size: cover;
   }
 
   .center-band {
-    top: 38%;
-    min-height: 150px;
-    grid-template-columns: 1fr minmax(190px, 54vw) 1fr;
-    padding: 12px 10px;
+    top: 43%;
+    min-height: 155px;
+    grid-template-columns: 0.75fr minmax(180px, 48vw) 0.75fr;
+    padding: 12px 8px;
   }
 
   .logo-wrap {
-    max-width: 72%;
-    padding: 0 6px;
+    max-width: none;
+    padding: 0 8px;
   }
 
   .logo-image {
-    width: min(58vw, 340px);
+    width: min(56vw, 340px);
     height: auto;
   }
 
   .location {
-    font-size: 0.78rem;
-    letter-spacing: 0.18em;
-    margin-top: 2px;
+    font-size: 0.82rem;
+    letter-spacing: 0.2em;
+    margin-top: 3px;
   }
 
   .credit-ribbon,
   .music-ribbon {
     font-size: 0.62rem;
-    line-height: 1.15;
-    padding: 10px 8px;
+    line-height: 1.25;
+    padding: 12px 6px;
   }
 
   .dates {
+    display: block;
     font-size: 0.68em;
     opacity: 0.85;
+    letter-spacing: 0.05em;
   }
 
-.contact-panel {
-  min-height: auto;
-  margin-top: -80px;      /* pull panel upward */
-  padding: 90px 24px 56px; /* restore space inside the panel */
-  border-left: none;
-  position: relative;
-  z-index: 5;
-}
+  .contact-panel {
+    min-height: auto;
+    margin-top: -55px;
+    padding: 72px 24px 56px;
+    border-left: none;
+  }
 
   .contact {
     max-width: 100%;
