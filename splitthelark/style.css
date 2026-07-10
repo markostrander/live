@@ -112,7 +112,10 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding: 220px 7vw 60px;
+
+  /* was 220px */
+  padding: 140px 7vw 60px;
+
   border-left: 1px solid rgba(184, 162, 74, 0.25);
 }
 
