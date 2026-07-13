@@ -110,8 +110,8 @@ body {
 </p>
 
 .soundcloud-player {
-    width: 100%;
-    margin: 0 0 34px 0;
+    width: 92%;
+    margin: 0 auto 34px;
 }
 
 .soundcloud-player iframe {
