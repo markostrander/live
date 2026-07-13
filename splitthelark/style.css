@@ -202,6 +202,23 @@ button:hover {
   background: rgba(184, 162, 74, 0.12);
 }
 
+button {
+  display: block;
+  margin: 36px auto 0;
+  padding: 14px 34px;
+  background: transparent;
+  border: 1px solid var(--gold);
+  color: var(--soft-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-family: Georgia, "Times New Roman", serif;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgba(184, 162, 74, 0.12);
+}
+
 /* THANK YOU PAGE */
 
 .thank-you-page {
