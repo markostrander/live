@@ -46,7 +46,7 @@
 
   </section>
 
-  <!-- RIGHT CONTACT PANEL -->
+<!-- RIGHT CONTACT PANEL -->
 <section class="contact-panel">
   <div class="contact">
 
@@ -71,12 +71,50 @@
     </p>
 
     <form action="https://api.web3forms.com/submit" method="POST">
-      <!-- hidden fields and form fields -->
+
+      <input
+        type="hidden"
+        name="access_key"
+        value="3abbc732-c74e-4514-b713-f8e2736713fd"
+      >
+
+      <input
+        type="hidden"
+        name="redirect"
+        value="https://splitthelark.net/thanks/"
+      >
+
+      <label for="name">Name</label>
+      <input
+        id="name"
+        type="text"
+        name="name"
+        required
+      >
+
+      <label for="email">Email</label>
+      <input
+        id="email"
+        type="email"
+        name="email"
+        required
+      >
+
+      <label for="message">Message</label>
+      <textarea
+        id="message"
+        name="message"
+        required
+      ></textarea>
+
+      <button type="submit">
+        Send Message
+      </button>
+
     </form>
 
   </div>
-</section>
-  
+</section>  
 </main>
 
 </body>
