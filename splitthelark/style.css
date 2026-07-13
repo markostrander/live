@@ -104,6 +104,17 @@ body {
   text-transform: uppercase;
 }
 
+<p class="intro">
+  “A Letter always feels to me like immortality…”<br>
+  — Emily Dickinson
+</p>
+
+<div class="soundcloud-player">
+  <!-- iframe here -->
+</div>
+
+<form action="https://api.web3forms.com/submit" method="POST">
+
 /* CONTACT PANEL */
 
 .contact-panel {
