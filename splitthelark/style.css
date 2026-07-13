@@ -1,3 +1,4 @@
+```css
 :root {
   --gold: #b8a24a;
   --soft-gold: #d8ca7a;
@@ -22,6 +23,8 @@ body {
   display: grid;
   grid-template-columns: 2.4fr 1fr;
 }
+
+/* ART PANEL */
 
 .art-panel {
   position: relative;
@@ -74,11 +77,29 @@ body {
 }
 
 .credit-ribbon {
-  clip-path: polygon(0 0, 96% 0, 100% 50%, 96% 100%, 0 100%);
+  clip-path: polygon(
+    0 0,
+    96% 0,
+    100% 50%,
+    96% 100%,
+    0 100%
+  );
 }
 
 .music-ribbon {
-  clip-path: polygon(4% 0, 100% 0, 100% 100%, 4% 100%, 0 50%);
+  clip-path: polygon(
+    4% 0,
+    100% 0,
+    100% 100%,
+    4% 100%,
+    0 50%
+  );
+}
+
+.dates {
+  font-size: 0.72em;
+  opacity: 0.85;
+  letter-spacing: 0.05em;
 }
 
 .logo-wrap {
@@ -104,14 +125,6 @@ body {
   text-transform: uppercase;
 }
 
-<p class="intro">
-  “A Letter always feels to me like immortality…”<br>
-  — Emily Dickinson
-</p>
-
-
-<form action="https://api.web3forms.com/submit" method="POST">
-
 /* CONTACT PANEL */
 
 .contact-panel {
@@ -120,31 +133,33 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-
-  /* was 220px */
-  padding: 140px 7vw 60px;
-
+  padding: 90px 36px 60px;
   border-left: 1px solid rgba(184, 162, 74, 0.25);
 }
 
 .contact {
   width: 100%;
   max-width: 420px;
+  margin: 0 auto;
   text-align: center;
 }
 
+/* SOUNDCLOUD PLAYER */
+
 .soundcloud-player {
-    width: 92%;
-    margin: 0 auto 34px;
+  width: 100%;
+  margin: 0 0 28px;
 }
 
 .soundcloud-player iframe {
-    width: 100%;
-    height: 166px;
-    border: 0;
-    display: block;
-    border-radius: 4px;
+  display: block;
+  width: 100%;
+  height: 166px;
+  border: 0;
+  border-radius: 4px;
 }
+
+/* CONTACT HEADING */
 
 .ornament {
   color: var(--gold);
@@ -170,7 +185,11 @@ h1 {
   color: #eee2c4;
 }
 
-form {
+/* FORM */
+
+.contact form {
+  width: 100%;
+  margin: 0;
   text-align: left;
 }
 
@@ -183,8 +202,9 @@ label {
   margin: 22px 0 8px;
 }
 
-input,
-textarea {
+.contact input,
+.contact textarea {
+  display: block;
   width: 100%;
   background: rgba(35, 25, 22, 0.55);
   border: 1px solid rgba(216, 202, 122, 0.35);
@@ -195,13 +215,13 @@ textarea {
   transition: border-color 0.3s ease;
 }
 
-textarea {
+.contact textarea {
   min-height: 140px;
   resize: vertical;
 }
 
-input:focus,
-textarea:focus {
+.contact input:focus,
+.contact textarea:focus {
   outline: none;
   border-color: var(--gold);
 }
@@ -219,25 +239,10 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+button:hover,
+button:focus {
   background: rgba(184, 162, 74, 0.12);
-}
-
-button {
-  display: block;
-  margin: 36px auto 0;
-  padding: 14px 34px;
-  background: transparent;
-  border: 1px solid var(--gold);
-  color: var(--soft-gold);
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-family: Georgia, "Times New Roman", serif;
-  cursor: pointer;
-}
-
-button:hover {
-  background: rgba(184, 162, 74, 0.12);
+  outline: none;
 }
 
 /* THANK YOU PAGE */
@@ -338,6 +343,18 @@ button:hover {
   }
 
   .contact {
+    width: 100%;
     max-width: 100%;
   }
+
+  .soundcloud-player {
+    width: 100%;
+    margin-bottom: 28px;
+  }
+
+  .soundcloud-player iframe {
+    width: 100%;
+    height: 166px;
+  }
 }
+```
